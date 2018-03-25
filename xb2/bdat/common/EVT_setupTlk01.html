@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>EVT_setupTlk01</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>setupName</th>
+          <th>objName</th>
+          <th>objType</th>
+          <th>objID</th>
+          <th>objModel</th>
+          <th>wpnBlade</th>
+        </tr>
+      </thead>
+      <tr id="50001">
+        <td>50001</td>
+        <td>
+        </td>
+        <td>tlkTgt</td>
+        <td>対象</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50002">
+        <td>50002</td>
+        <td>
+        </td>
+        <td>tlkTgt_Pc</td>
+        <td>対象</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50003">
+        <td>50003</td>
+        <td>
+        </td>
+        <td></td>
+        <td>レックス</td>
+        <td>2</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50004">
+        <td>50004</td>
+        <td>
+        </td>
+        <td>qst500501</td>
+        <td>メイ</td>
+        <td>4</td>
+        <td>BLADE_RARE_027</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50005">
+        <td>50005</td>
+        <td>
+        </td>
+        <td></td>
+        <td>先頭キャラ</td>
+        <td>2</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50006">
+        <td>50006</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ハンメフ</td>
+        <td>5</td>
+        <td>RSC_NP47600163</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50007">
+        <td>50007</td>
+        <td>
+        </td>
+        <td>qst500601</td>
+        <td>リンネ</td>
+        <td>4</td>
+        <td>BLADE_RINNE</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50008">
+        <td>50008</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_RINNE</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50009">
+        <td>50009</td>
+        <td>
+        </td>
+        <td></td>
+        <td>サレス</td>
+        <td>5</td>
+        <td>RSC_NP41300027</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50010">
+        <td>50010</td>
+        <td>
+        </td>
+        <td>qst501401</td>
+        <td>イダテン</td>
+        <td>4</td>
+        <td>BLADE_IDATEN</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50011">
+        <td>50011</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_IDATEN</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50012">
+        <td>50012</td>
+        <td>
+        </td>
+        <td>qst501802</td>
+        <td>シキ</td>
+        <td>4</td>
+        <td>BLADE_SHIKI</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50013">
+        <td>50013</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_SHIKI</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50014">
+        <td>50014</td>
+        <td>
+        </td>
+        <td></td>
+        <td>クション</td>
+        <td>5</td>
+        <td>RSC_NP42350212</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50015">
+        <td>50015</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ノポンA</td>
+        <td>5</td>
+        <td>RSC_NP42320113</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50016">
+        <td>50016</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ノポンB</td>
+        <td>5</td>
+        <td>RSC_NP42300117</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50017">
+        <td>50017</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ノポンC</td>
+        <td>5</td>
+        <td>RSC_NP42350213</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50018">
+        <td>50018</td>
+        <td>
+        </td>
+        <td>qst501804</td>
+        <td>シキ</td>
+        <td>4</td>
+        <td>BLADE_SHIKI</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50019">
+        <td>50019</td>
+        <td>
+        </td>
+        <td></td>
+        <td>テルエス</td>
+        <td>5</td>
+        <td>RSC_NP45400011</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50020">
+        <td>50020</td>
+        <td>
+        </td>
+        <td>qst502101</td>
+        <td>トンドン</td>
+        <td>5</td>
+        <td>RSC_NP42300012</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50021">
+        <td>50021</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50022">
+        <td>50022</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50023">
+        <td>50023</td>
+        <td>
+        </td>
+        <td>qst502102</td>
+        <td>アッシュ</td>
+        <td>5</td>
+        <td>RSC_NP45320124</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50024">
+        <td>50024</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50025">
+        <td>50025</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50026">
+        <td>50026</td>
+        <td>
+        </td>
+        <td>qst502103</td>
+        <td>シルヴェストロ</td>
+        <td>5</td>
+        <td>RSC_NP43700141</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50027">
+        <td>50027</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50028">
+        <td>50028</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50029">
+        <td>50029</td>
+        <td>
+        </td>
+        <td>qst502104</td>
+        <td>ジーナ</td>
+        <td>5</td>
+        <td>RSC_NP43200144</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50030">
+        <td>50030</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50031">
+        <td>50031</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50032">
+        <td>50032</td>
+        <td>
+        </td>
+        <td>qst502105</td>
+        <td>ドメニコ</td>
+        <td>5</td>
+        <td>RSC_NP43700241</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50033">
+        <td>50033</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50034">
+        <td>50034</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50035">
+        <td>50035</td>
+        <td>
+        </td>
+        <td>qst502106</td>
+        <td>サムロン</td>
+        <td>5</td>
+        <td>RSC_NP45370151</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50036">
+        <td>50036</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50037">
+        <td>50037</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50038">
+        <td>50038</td>
+        <td>
+        </td>
+        <td>qst502107</td>
+        <td>オニヨラ</td>
+        <td>5</td>
+        <td>RSC_NP45400251</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50039">
+        <td>50039</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50040">
+        <td>50040</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50041">
+        <td>50041</td>
+        <td>
+        </td>
+        <td>qst502108</td>
+        <td>フレジノ</td>
+        <td>5</td>
+        <td>RSC_NP47300162</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50042">
+        <td>50042</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50043">
+        <td>50043</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50044">
+        <td>50044</td>
+        <td>
+        </td>
+        <td>qst502109</td>
+        <td>オリエッタ</td>
+        <td>5</td>
+        <td>RSC_NP46400079</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50045">
+        <td>50045</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50046">
+        <td>50046</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50047">
+        <td>50047</td>
+        <td>
+        </td>
+        <td>qst502110</td>
+        <td>エーミリオ</td>
+        <td>5</td>
+        <td>RSC_NP44100184</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50048">
+        <td>50048</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50049">
+        <td>50049</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50050">
+        <td>50050</td>
+        <td>
+        </td>
+        <td>qst502111</td>
+        <td>ドルセーア</td>
+        <td>5</td>
+        <td>RSC_NP44600184</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50051">
+        <td>50051</td>
+        <td>
+        </td>
+        <td></td>
+        <td>親ドライバー</td>
+        <td>9</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50052">
+        <td>50052</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホタル</td>
+        <td>4</td>
+        <td>BLADE_HOTARU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50053">
+        <td>50053</td>
+        <td>
+        </td>
+        <td>tlk19000201A</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50054">
+        <td>50054</td>
+        <td>
+        </td>
+        <td></td>
+        <td>じっちゃん</td>
+        <td>5</td>
+        <td>RSC_NP00000315</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50055">
+        <td>50055</td>
+        <td>
+        </td>
+        <td>qst500802</td>
+        <td>ドライバー1</td>
+        <td>2</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50056">
+        <td>50056</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ブレイド1</td>
+        <td>10</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50057">
+        <td>50057</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ドライバー2</td>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50058">
+        <td>50058</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ブレイド2</td>
+        <td>10</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50059">
+        <td>50059</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ドライバー3</td>
+        <td>2</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50060">
+        <td>50060</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ブレイド3</td>
+        <td>10</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

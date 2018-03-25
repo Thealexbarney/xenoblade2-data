@@ -1,0 +1,3179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_ShopList</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">Name</th>
+          <th>ShopIcon</th>
+          <th>ShopType</th>
+          <th>TableID</th>
+          <th>Discount1</th>
+          <th>Discount2</th>
+          <th>Discount3</th>
+          <th>Discount4</th>
+          <th>Discount5</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">【ショップ名・１２文字】</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#2">2</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">【ショップ名・１２文字】</td>
+        <td>434</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#1">1</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">【ショップ名・１２文字】</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#3">3</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">【ショップ名・１２文字】</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#4">4</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">【ショップ名・１２文字】</td>
+        <td>432</td>
+        <td>AuxCore</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">【ショップ名・１２文字】</td>
+        <td>434</td>
+        <td>Normal</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">【ショップ名・１２文字】</td>
+        <td>435</td>
+        <td>Normal</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">【ショップ名・１２文字】</td>
+        <td>436</td>
+        <td>Normal</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">【ショップ名・１２文字】</td>
+        <td>437</td>
+        <td>Normal</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">【ショップ名・１２文字】</td>
+        <td>438</td>
+        <td>Normal</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_SpecialShop.html#1">MNU_SpecialShop#1</a>
+          </details>
+        </td>
+        <td class="side">Shynini's Accessories</td>
+        <td>446</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#5">5</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2095">ma02a_FLD_NpcPop#npc42450113_02</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2096">ma02a_FLD_NpcPop#npc42450113_01</a>
+          </details>
+        </td>
+        <td class="side">Lemour Inn</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#4">4</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2092">ma02a_FLD_NpcPop#npc42350114_01</a>
+          </details>
+        </td>
+        <td class="side">Mamalu's Core Store</td>
+        <td>432</td>
+        <td>AuxCore</td>
+        <td></td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+          <details>
+            <summary>6 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2038">ma02a_FLD_NpcPop#npc00600111_02</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2039">ma02a_FLD_NpcPop#npc00600111_06</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2040">ma02a_FLD_NpcPop#npc00600111_05</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2041">ma02a_FLD_NpcPop#npc00600111_03</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2042">ma02a_FLD_NpcPop#npc00600111_04</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2043">ma02a_FLD_NpcPop#npc00600111_01</a>
+          </details>
+        </td>
+        <td class="side">Central Exchange</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#5">5</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td class="side">High-Voltage Charging</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#7">7</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2181">ma02a_FLD_NpcPop#npc42450114_02</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2182">ma02a_FLD_NpcPop#npc42450114_01</a>
+          </details>
+        </td>
+        <td class="side">Shynini's Accessories</td>
+        <td>446</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#6">6</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2080">ma02a_FLD_NpcPop#npc42300017_01</a>
+          </details>
+        </td>
+        <td class="side">Shroomblade Smithing</td>
+        <td>430</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#7">7</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2079">ma02a_FLD_NpcPop#npc42300014_01</a>
+          </details>
+        </td>
+        <td class="side">Rumbletum Canteen</td>
+        <td>434</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#8">8</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2089">ma02a_FLD_NpcPop#npc42350116_01</a>
+          </details>
+        </td>
+        <td class="side">Noodler's Delight</td>
+        <td>434</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#9">9</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2093">ma02a_FLD_NpcPop#npc42400012_02</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2094">ma02a_FLD_NpcPop#npc42400012_01</a>
+          </details>
+        </td>
+        <td class="side">Fishy Fishy</td>
+        <td>437</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#10">10</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2087">ma02a_FLD_NpcPop#npc42350111_01</a>
+          </details>
+        </td>
+        <td class="side">Honeycomb Sweets</td>
+        <td>438</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#11">11</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2091">ma02a_FLD_NpcPop#npc42350115_01</a>
+          </details>
+        </td>
+        <td class="side">12 Brothersisterpon</td>
+        <td>439</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#12">12</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2097">ma02a_FLD_NpcPop#npc42450112_01</a>
+          </details>
+        </td>
+        <td class="side">Strummer Instruments</td>
+        <td>440</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#13">13</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2085">ma02a_FLD_NpcPop#npc42350112_02</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2086">ma02a_FLD_NpcPop#npc42350112_01</a>
+          </details>
+        </td>
+        <td class="side">Reedirait Bookstore</td>
+        <td>442</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#14">14</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td class="side">Reedirait Bookstore</td>
+        <td>442</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#15">15</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2088">ma02a_FLD_NpcPop#npc42350113_01</a>
+          </details>
+        </td>
+        <td class="side">Nopox Hobby Store</td>
+        <td>443</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#16">16</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2188">ma02a_FLD_NpcPop#npc43400011_01</a>
+          </details>
+        </td>
+        <td class="side">Cleo's Cosmetics</td>
+        <td>444</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#17">17</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2398">ma02a_FLD_NpcPop#npc42340112_01</a>
+          </details>
+        </td>
+        <td class="side">Whiteside Salvaging</td>
+        <td>428</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#18">18</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2339">ma02a_FLD_NpcPop#npc42400015_01</a>
+          </details>
+        </td>
+        <td class="side">Informant</td>
+        <td>429</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#19">19</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+          <details>
+            <summary>19 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2004">ma02a_FLD_NpcPop#npc45300015_01</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2090">ma02a_FLD_NpcPop#npc42350115_02</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2135">ma02a_FLD_NpcPop#npc42300012_11</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2334">ma02a_FLD_NpcPop#npc42350211_01</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2348">ma02a_FLD_NpcPop#npc00000312_01</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2349">ma02a_FLD_NpcPop#npc42100112_01</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2350">ma02a_FLD_NpcPop#npc42100112_09</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2351">ma02a_FLD_NpcPop#npc42320112_01</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2371">ma02a_FLD_NpcPop#npc42300116_02</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2372">ma02a_FLD_NpcPop#npc42300116_03</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2373">ma02a_FLD_NpcPop#npc42300116_04</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2374">ma02a_FLD_NpcPop#npc42300116_05</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2375">ma02a_FLD_NpcPop#npc42300116_06</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2376">ma02a_FLD_NpcPop#npc42300116_07</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2388">ma02a_FLD_NpcPop#npc00000313_01</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2389">ma02a_FLD_NpcPop#npc00000313_02</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2405">ma02a_FLD_NpcPop#2405</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2406">ma02a_FLD_NpcPop#2406</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2407">ma02a_FLD_NpcPop#2407</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>420</td>
+        <td>Normal</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td class="side">Coedwig Inn</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#5">5</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td class="side">Lily's Aux Cores</td>
+        <td>432</td>
+        <td>AuxCore</td>
+        <td></td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td class="side">Masnach Exchange</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#9">9</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td class="side">NQ1044配給所登録</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#10">10</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td class="side">巨神獣</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#11">11</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td class="side">Keydal Accessories</td>
+        <td>446</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#20">20</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td class="side">Zelkova Blacksmiths</td>
+        <td>430</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#21">21</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td class="side">Tilly Bakery</td>
+        <td>434</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#22">22</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td class="side">Llysiau Greens</td>
+        <td>435</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#23">23</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td class="side">Gryff Butchers</td>
+        <td>436</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#24">24</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td class="side">Tomi Fishmongers</td>
+        <td>437</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#25">25</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td class="side">Café Savvy</td>
+        <td>439</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#26">26</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td class="side">Soniarus Music</td>
+        <td>440</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#27">27</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td class="side">Cmalaf Artwork</td>
+        <td>441</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#28">28</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td class="side">Cosmetipolitan</td>
+        <td>444</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#29">29</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td class="side">Neuromin Textiles</td>
+        <td>445</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#30">30</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td class="side">Yarvay Salvaging</td>
+        <td>428</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#31">31</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td class="side">Informant</td>
+        <td>429</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#32">32</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td class="side">Margia's Odds & Ends</td>
+        <td>420</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#33">33</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td class="side">Folmarie Inn</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#6">6</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td class="side">Harghalgh Inn</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#7">7</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td class="side">Leonora Aux Cores</td>
+        <td>432</td>
+        <td>AuxCore</td>
+        <td></td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td class="side">Hebble Aux Cores</td>
+        <td>432</td>
+        <td>AuxCore</td>
+        <td></td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td class="side">Briarley Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#12">12</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td class="side">Unita Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#13">13</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td class="side">Distribution Center</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#15">15</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td class="side">Repair Dock Dist. Cent.</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#16">16</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td class="side">Port Dist. Cent.</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#17">17</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td class="side">金貸し婆さん</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#18">18</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td class="side">Cookie Recipes</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#65">65</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td class="side">Flan Recipes</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#66">66</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td class="side">Treasured Recipes</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#67">67</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td class="side">Brabe</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#19">19</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td class="side">Whelza Accessories</td>
+        <td>446</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#34">34</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td class="side">Piccaka Accessories</td>
+        <td>446</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#35">35</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td class="side">Proplater Blacksmiths</td>
+        <td>430</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#36">36</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td class="side">Lleman Blacksmiths</td>
+        <td>430</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#37">37</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td class="side">Brad Flatforms</td>
+        <td>434</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#38">38</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td class="side">Sadecott Groceries</td>
+        <td>435</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#39">39</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td class="side">Volty Butchers</td>
+        <td>436</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#40">40</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td class="side">Ikthus Fishmongers</td>
+        <td>437</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#41">41</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td class="side">Sprintsy Sweets</td>
+        <td>438</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#42">42</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td class="side">Shellbrow Wagon</td>
+        <td>438</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#43">43</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td class="side">Just Desserts</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#75">75</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td class="side">Vargel Tavern</td>
+        <td>439</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#44">44</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td class="side">Vibrattio Instruments</td>
+        <td>440</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#45">45</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td class="side">Maluria Antiques</td>
+        <td>441</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#46">46</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td class="side">Aldomar Books</td>
+        <td>442</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#47">47</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td class="side">Aldomar Books</td>
+        <td>442</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#48">48</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td class="side">Hobby Knick-Knacks</td>
+        <td>443</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#49">49</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td class="side">Aquaneze Cosmetics</td>
+        <td>444</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#50">50</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td class="side">Fallone Crafts</td>
+        <td>445</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#51">51</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td class="side">Malbren Salvaging</td>
+        <td>428</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#52">52</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td class="side">Informant</td>
+        <td>429</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#53">53</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td class="side">Informant</td>
+        <td>429</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#54">54</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td class="side">Lleman Blacksmiths</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#14">14</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td class="side">Jakolo's Inn</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#8">8</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td class="side">Jaquai Aux Cores</td>
+        <td>432</td>
+        <td>AuxCore</td>
+        <td></td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td class="side">Martietta Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#20">20</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td class="side">アコニエル(登録1)</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#21">21</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td class="side">アコニエル(登録2)</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#22">22</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td class="side">Peatopaz Accessories</td>
+        <td>446</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#55">55</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td class="side">Carwood Blacksmiths</td>
+        <td>430</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#56">56</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td class="side">Griogair's Greens</td>
+        <td>435</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#57">57</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td class="side">Bassani Butchers</td>
+        <td>436</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#58">58</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td class="side">Hanoon Fishmongers</td>
+        <td>437</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#59">59</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td class="side">Salter Sweets</td>
+        <td>438</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#60">60</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td class="side">Adelno Music</td>
+        <td>440</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#61">61</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td class="side">Yafush Antiques</td>
+        <td>441</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#62">62</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td class="side">Haskefell Books</td>
+        <td>442</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#63">63</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td class="side">Haskefell Books</td>
+        <td>442</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#64">64</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td class="side">Elgeschel Hobby Store</td>
+        <td>443</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#65">65</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td class="side">Larmogg Salvaging</td>
+        <td>428</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#66">66</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td class="side">Informant</td>
+        <td>429</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#67">67</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td class="side">Belchett Recycling</td>
+        <td>420</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#68">68</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td class="side">Elnatauro Inn</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#9">9</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td class="side">Sanctum Chambers</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#10">10</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td class="side">Demois Aux Cores</td>
+        <td>432</td>
+        <td>AuxCore</td>
+        <td></td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td class="side">Prevarr Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#24">24</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td class="side">Topsten Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#25">25</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td class="side">NQ1044配給所登録</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#26">26</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td class="side">NQ1046スケッチ登録</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#27">27</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td class="side">Koacurio Accessories</td>
+        <td>446</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#69">69</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td class="side">Regulus Blacksmiths</td>
+        <td>430</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#70">70</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td class="side">Calceno Deli</td>
+        <td>434</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#71">71</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td class="side">Icarus Butchers</td>
+        <td>436</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#72">72</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td class="side">Cookie Seller</td>
+        <td>420</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#73">73</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td class="side">Cafe Lutino</td>
+        <td>439</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#74">74</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td class="side">Jugos Antiques</td>
+        <td>441</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#75">75</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td class="side">Colpon Books</td>
+        <td>442</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#76">76</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td class="side">Silktu Textiles</td>
+        <td>445</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#77">77</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td class="side">Aquarius Salvaging</td>
+        <td>428</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#78">78</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td class="side">Informant</td>
+        <td>429</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#79">79</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td class="side">Anastatia's</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#11">11</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td class="side">Lelemi Aux Cores</td>
+        <td>432</td>
+        <td>AuxCore</td>
+        <td></td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td class="side">DeAlego Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#28">28</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td class="side">兵士長</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#29">29</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td class="side">Lansmeyer Accessories</td>
+        <td>446</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#80">80</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td class="side">Casheefs Blacksmiths</td>
+        <td>430</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#81">81</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td class="side">Platini Deli</td>
+        <td>434</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#82">82</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td class="side">Lectica Vegetables</td>
+        <td>435</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#83">83</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td class="side">Tatraty Fish</td>
+        <td>437</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#84">84</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td class="side">Placks Patisserie</td>
+        <td>438</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#85">85</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td class="side">Memoria Art</td>
+        <td>441</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#86">86</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td class="side">Biblio Paulio</td>
+        <td>442</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#87">87</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td class="side">Biblio Paulio</td>
+        <td>442</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#88">88</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td class="side">Biblio Paulio</td>
+        <td>442</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#89">89</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td class="side">Hobby Trappers</td>
+        <td>443</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#90">90</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td class="side">Praximo Cosmetics</td>
+        <td>444</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#91">91</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td class="side">Boldarde Textiles</td>
+        <td>445</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#92">92</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td class="side">Dolphin Salvagers</td>
+        <td>428</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#93">93</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td class="side">Informant</td>
+        <td>429</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#94">94</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td class="side">Aunt Corinne's House</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#12">12</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td class="side">Tottet Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#31">31</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td class="side">Kinkir Accessories</td>
+        <td>446</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#95">95</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td class="side">Bamboo Sword Smithy</td>
+        <td>430</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#96">96</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td class="side">Corcaja Greengrocers</td>
+        <td>435</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#97">97</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td class="side">Speck Butchers</td>
+        <td>436</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#98">98</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td class="side">Coral Leaf Fresh Fish</td>
+        <td>437</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#99">99</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td class="side">Talmye Antiques</td>
+        <td>441</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#100">100</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td class="side">Future Crafts</td>
+        <td>445</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#101">101</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td class="side">Courtcoster Salvaging</td>
+        <td>428</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#102">102</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td class="side">Informant</td>
+        <td>429</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#103">103</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td class="side">Mermerry Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#32">32</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td class="side">Honey-Loving Sailor</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#33">33</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td class="side">Vale of Weavery</td>
+        <td>427</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#38">38</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td class="side">Altar of Sealing</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#44">44</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2347">ma02a_FLD_NpcPop#npc00000311_01</a>
+          </details>
+        </td>
+        <td class="side">Dahlia's Icecraft</td>
+        <td>427</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#49">49</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_SpecialShop.html#3">MNU_SpecialShop#3</a>
+          </details>
+        </td>
+        <td class="side">Krezzi's XQ</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#50">50</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td class="side">Pioneering Merchant</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#52">52</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td class="side">Honey-Loving Merchant</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#53">53</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td class="side">Pioneering Merchant</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#54">54</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td class="side">Distribution Center</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#55">55</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td class="side">Repair Dock Dist. Cent.</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#56">56</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td class="side">Port Dist. Cent.</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#57">57</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td class="side">Panpan, Trainee Pilot</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#6">6</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td class="side">Rumbletum's Kitchen</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#68">68</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td class="side">Rumbletum's Kitchen</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#69">69</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2273">ma02a_FLD_NpcPop#npc42400014_08</a>
+          </details>
+        </td>
+        <td class="side">Falala, Pop Star</td>
+        <td>436</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#105">105</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td class="side">Capt. Nopopon statue</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#70">70</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td class="side">Capt. Nopopon statue</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#71">71</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td class="side">Niranira</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#72">72</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td class="side">Trader Mokumoku</td>
+        <td>420</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#104">104</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td class="side">Trader Mokumoku</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#58">58</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td class="side">New Vegetable Strains</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#59">59</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td class="side">New Vegetable Strains</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#60">60</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td class="side">Smaia</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#74">74</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td class="side">Mark</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#61">61</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td class="side">Kirk</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#62">62</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td class="side">Kazuna</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#63">63</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td class="side">Snififi's Gang</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#23">23</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2313">ma02a_FLD_NpcPop#npc42450117_03</a>
+          </details>
+        </td>
+        <td class="side">Misimisi Jewelry</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#8">8</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td class="side">Charity to the Sage</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#30">30</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td class="side">Ration Recipes</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#64">64</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td class="side">Pyra's Cooking</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#34">34</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td class="side">Pyra's Cooking</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#35">35</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td class="side">Pyra's Cooking</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#36">36</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td class="side">Dumplings! by Vess</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#37">37</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td class="side">Ardun Rearing</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#39">39</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td class="side">Ardun Rearing</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#40">40</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td class="side">Ardun Rearing</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#41">41</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td class="side">Ardun Rearing</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#42">42</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td class="side">Ardun Rearing</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#43">43</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2394">ma02a_FLD_NpcPop#npc00000216_01</a>
+          </details>
+        </td>
+        <td class="side">Cooked Food Box</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#45">45</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2395">ma02a_FLD_NpcPop#npc00000217_01</a>
+          </details>
+        </td>
+        <td class="side">Dessert Box</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#46">46</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2396">ma02a_FLD_NpcPop#npc00000218_01</a>
+          </details>
+        </td>
+        <td class="side">Veg-Based Food Box</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#47">47</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2397">ma02a_FLD_NpcPop#npc00000219_01</a>
+          </details>
+        </td>
+        <td class="side">Beverage Box</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#48">48</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td class="side">Charity to the Sage</td>
+        <td>420</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#73">73</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td class="side">Folmarie Inn</td>
+        <td>431</td>
+        <td>Inn</td>
+        <td><a href="MNU_ShopInn.html#13">13</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+        </td>
+        <td class="side">Cafe Lutino</td>
+        <td>439</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#106">106</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+        </td>
+        <td class="side">Dokkdokk Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#76">76</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+        </td>
+        <td class="side">Informant</td>
+        <td>429</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#107">107</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2204">ma02a_FLD_NpcPop#npc45300012_02</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2210">ma02a_FLD_NpcPop#npc45300012_06</a>
+          </details>
+        </td>
+        <td class="side">Courier</td>
+        <td>420</td>
+        <td>Normal</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+          <details>
+            <summary>9 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2125">ma02a_FLD_NpcPop#npc41300012_05</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2146">ma02a_FLD_NpcPop#npc42360111_05</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2151">ma02a_FLD_NpcPop#npc42360112_05</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2157">ma02a_FLD_NpcPop#npc42400011_05</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2163">ma02a_FLD_NpcPop#npc42400013_07</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2170">ma02a_FLD_NpcPop#npc42410111_05</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2175">ma02a_FLD_NpcPop#npc42450111_06</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2189">ma02a_FLD_NpcPop#npc43400012_05</a>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2198">ma02a_FLD_NpcPop#npc45300011_05</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>419</td>
+        <td>Normal</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+        </td>
+        <td class="side">Ration Recipes</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#79">79</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+        </td>
+        <td class="side">Ration Recipes</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#80">80</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+        </td>
+        <td class="side">Ration Recipes</td>
+        <td>426</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#81">81</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+        </td>
+        <td class="side">Margia's Odds & Ends</td>
+        <td>420</td>
+        <td>Normal</td>
+        <td><a href="MNU_ShopNormal.html#108">108</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+        </td>
+        <td class="side">Tottet Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#77">77</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common_gmk/ma02a_FLD_NpcPop.html#2399">ma02a_FLD_NpcPop#npc46500173_11</a>
+          </details>
+        </td>
+        <td class="side">Topsten Trading</td>
+        <td>433</td>
+        <td>Exchange</td>
+        <td><a href="MNU_ShopChange.html#78">78</td></a>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_SpecialShop.html#2">MNU_SpecialShop#2</a>
+          </details>
+        </td>
+        <td class="side">Lily's Aux Cores</td>
+        <td>432</td>
+        <td>AuxCore</td>
+        <td></td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>
