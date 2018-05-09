@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma40a_FLD_MapObjPop</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>Condition</th>
+          <th>RSC_ID</th>
+          <th>StateName</th>
+          <th>Visible_XZ</th>
+          <th>Visible_Y</th>
+          <th>Invisible_XZ</th>
+          <th>Invisible_Y</th>
+          <th>Priority</th>
+          <th>mapobjcol</th>
+        </tr>
+      </thead>
+      <tr id="40001">
+        <td>40001</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj700033_01</td>
+        <td>2928</td>
+        <td>86</td>
+        <td></td>
+        <td>20000</td>
+        <td>20000</td>
+        <td>25000</td>
+        <td>25000</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40002">
+        <td>40002</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj700033_02</td>
+        <td>2929</td>
+        <td>86</td>
+        <td></td>
+        <td>20000</td>
+        <td>20000</td>
+        <td>25000</td>
+        <td>25000</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40003">
+        <td>40003</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_01</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40004">
+        <td>40004</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_02</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40005">
+        <td>40005</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_03</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40006">
+        <td>40006</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_04</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40007">
+        <td>40007</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_05</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40008">
+        <td>40008</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_06</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40009">
+        <td>40009</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_07</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40010">
+        <td>40010</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_08</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40011">
+        <td>40011</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_09</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40012">
+        <td>40012</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_10</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40013">
+        <td>40013</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_11</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40014">
+        <td>40014</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_12</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40015">
+        <td>40015</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_13</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40016">
+        <td>40016</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_14</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40017">
+        <td>40017</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_15</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40018">
+        <td>40018</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_16</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40019">
+        <td>40019</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_17</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40020">
+        <td>40020</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_18</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40021">
+        <td>40021</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_19</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40022">
+        <td>40022</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_20</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40023">
+        <td>40023</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_21</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40024">
+        <td>40024</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_22</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40025">
+        <td>40025</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_23</td>
+        <td>2931</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40026">
+        <td>40026</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj741009_01</td>
+        <td>2975</td>
+        <td>88</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40027">
+        <td>40027</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj741009_02</td>
+        <td>2976</td>
+        <td>88</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40028">
+        <td>40028</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj741009_03</td>
+        <td>2977</td>
+        <td>88</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40029">
+        <td>40029</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj741009_04</td>
+        <td>2978</td>
+        <td>88</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40030">
+        <td>40030</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj741009_05</td>
+        <td>2979</td>
+        <td>88</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40031">
+        <td>40031</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj741009_06</td>
+        <td>2980</td>
+        <td>88</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40032">
+        <td>40032</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj741009_07</td>
+        <td>2981</td>
+        <td>88</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40033">
+        <td>40033</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj741009_08</td>
+        <td>2982</td>
+        <td>88</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40034">
+        <td>40034</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740002_01</td>
+        <td>2985</td>
+        <td>89</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40035">
+        <td>40035</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj741011_01</td>
+        <td>3003</td>
+        <td>90</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40036">
+        <td>40036</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj741011_02</td>
+        <td>3003</td>
+        <td>90</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40037">
+        <td>40037</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_31</td>
+        <td>3054</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40038">
+        <td>40038</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_32</td>
+        <td>3055</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40039">
+        <td>40039</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_33</td>
+        <td>3056</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40040">
+        <td>40040</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_34</td>
+        <td>3057</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40041">
+        <td>40041</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_35</td>
+        <td>3058</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40042">
+        <td>40042</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_36</td>
+        <td>3059</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40043">
+        <td>40043</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_37</td>
+        <td>3060</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40044">
+        <td>40044</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_38</td>
+        <td>3060</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40045">
+        <td>40045</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_39</td>
+        <td>3060</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40046">
+        <td>40046</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_40</td>
+        <td>3060</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40047">
+        <td>40047</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740001_41</td>
+        <td>3060</td>
+        <td>87</td>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>150</td>
+        <td>150</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40048">
+        <td>40048</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740005_01</td>
+        <td>3100</td>
+        <td>91</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40049">
+        <td>40049</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740003_01</td>
+        <td>0</td>
+        <td>96</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40050">
+        <td>40050</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740003_02</td>
+        <td>0</td>
+        <td>96</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40051">
+        <td>40051</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740003_03</td>
+        <td>0</td>
+        <td>96</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40052">
+        <td>40052</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740003_04</td>
+        <td>0</td>
+        <td>96</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40053">
+        <td>40053</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740003_05</td>
+        <td>0</td>
+        <td>96</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40054">
+        <td>40054</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740003_06</td>
+        <td>0</td>
+        <td>96</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40055">
+        <td>40055</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740003_07</td>
+        <td>0</td>
+        <td>96</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40056">
+        <td>40056</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740003_08</td>
+        <td>0</td>
+        <td>96</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40057">
+        <td>40057</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740003_09</td>
+        <td>0</td>
+        <td>96</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="40058">
+        <td>40058</td>
+        <td>
+        </td>
+        <td class="side">obj_40_oj740003_10</td>
+        <td>0</td>
+        <td>96</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>250</td>
+        <td>250</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>
